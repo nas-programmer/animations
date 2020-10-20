@@ -1,6 +1,6 @@
 """Cellular Automata - Self Replication"""
 
-import pygame, sys, random, numpy as np
+import pygame, sys, random
 
 size = (width, height) = 640, 360
 
@@ -62,8 +62,6 @@ while True:
                 pygame.draw.rect(win, (255, 255, 255), (x, y, s, s))
             elif grid[j][i] == 0:
                 pygame.draw.rect(win, (0, 0, 0), (x, y, s, s))
-            # pygame.draw.line(win, (20, 20, 20), (x,y), (x, height))
-            # pygame.draw.line(win, (20, 20, 20), (x,y), (width,y))
     
     if flag:
         new_grid = []
